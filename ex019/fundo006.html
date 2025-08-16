@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: repeat-y;
             background-size: cover;
+            background-attachment: fixed; */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+            background-size: cover;
         }
 
+        /* Shorthand Background
+        color > image > position > repeat > [size] >  attachment
+        Na pratica o size não funcionou.
+         */
+           
         /* o background-size tem o auto(que ja vem de padrao), o contain(ele te da a ordem para mostrar a imagem 100% exibida, isto é, não pode ter corte nenhum na imagem) e o cover(ele vai cobrir a tela interia mesmo que pra isso ele corte a imagem) */
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
