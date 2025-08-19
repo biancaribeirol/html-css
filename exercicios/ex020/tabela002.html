@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -32,12 +33,22 @@
         }
         /* Se o fundo for branco não há necessidade de configurar cor  em duas ordens */
         /* odd é impar  ou 2n-1*/
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+     /*  Para cabeçalho fixo em tabelas grandes usa essa regrinha com o table em positon: relative. P.S: não funciona em todos os navegadores, mas no chrome sim.*/
+        
         tbody > tr:nth-child(odd) {
            background-color: white;
            
         }
-        /* ou pode usar 2n, 3n e asim por diante */
+        /* ou pode usar 2n, 3n e assim por diante */
         /* even é par */
+        
+        
         tbody > tr:nth-child(even) {
             background-color: lightgray;
 
@@ -189,6 +200,17 @@
 
     <!-- scope col = na mesma coluna
          scope row = na mesma linha -->
-</table>           
+</table> 
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas, nesciunt consequatur ex ipsa in earum officiis ducimus, minus laboriosam repellendus magnam dolore iusto veritatis aliquam, quia praesentium vel mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et aut veritatis ipsam tempora eos. Optio rerum modi cumque, eaque facilis ullam, earum, porro pariatur ratione officiis eveniet molestias aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et omnis dolores deleniti, fugiat magnam minima? Vel perferendis sapiente dolorem. Obcaecati ratione, facere voluptatem tenetur ipsam sint delectus necessitatibus dicta.</p>  
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas, nesciunt consequatur ex ipsa in earum officiis ducimus, minus laboriosam repellendus magnam dolore iusto veritatis aliquam, quia praesentium vel mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et aut veritatis ipsam tempora eos. Optio rerum modi cumque, eaque facilis ullam, earum, porro pariatur ratione officiis eveniet molestias aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et omnis dolores deleniti, fugiat magnam minima? Vel perferendis sapiente dolorem. Obcaecati ratione, facere voluptatem tenetur ipsam sint delectus necessitatibus dicta.</p>   
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas, nesciunt consequatur ex ipsa in earum officiis ducimus, minus laboriosam repellendus magnam dolore iusto veritatis aliquam, quia praesentium vel mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et aut veritatis ipsam tempora eos. Optio rerum modi cumque, eaque facilis ullam, earum, porro pariatur ratione officiis eveniet molestias aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et omnis dolores deleniti, fugiat magnam minima? Vel perferendis sapiente dolorem. Obcaecati ratione, facere voluptatem tenetur ipsam sint delectus necessitatibus dicta.</p>   
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas, nesciunt consequatur ex ipsa in earum officiis ducimus, minus laboriosam repellendus magnam dolore iusto veritatis aliquam, quia praesentium vel mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et aut veritatis ipsam tempora eos. Optio rerum modi cumque, eaque facilis ullam, earum, porro pariatur ratione officiis eveniet molestias aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et omnis dolores deleniti, fugiat magnam minima? Vel perferendis sapiente dolorem. Obcaecati ratione, facere voluptatem tenetur ipsam sint delectus necessitatibus dicta.</p>   
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas, nesciunt consequatur ex ipsa in earum officiis ducimus, minus laboriosam repellendus magnam dolore iusto veritatis aliquam, quia praesentium vel mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et aut veritatis ipsam tempora eos. Optio rerum modi cumque, eaque facilis ullam, earum, porro pariatur ratione officiis eveniet molestias aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et omnis dolores deleniti, fugiat magnam minima? Vel perferendis sapiente dolorem. Obcaecati ratione, facere voluptatem tenetur ipsam sint delectus necessitatibus dicta.</p>   
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas, nesciunt consequatur ex ipsa in earum officiis ducimus, minus laboriosam repellendus magnam dolore iusto veritatis aliquam, quia praesentium vel mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et aut veritatis ipsam tempora eos. Optio rerum modi cumque, eaque facilis ullam, earum, porro pariatur ratione officiis eveniet molestias aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et omnis dolores deleniti, fugiat magnam minima? Vel perferendis sapiente dolorem. Obcaecati ratione, facere voluptatem tenetur ipsam sint delectus necessitatibus dicta.</p>   
 </body>
 </html>
