@@ -9,11 +9,16 @@
     <h1>Meu site principal</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque ea sunt praesentium cum, quam accusamus recusandae facilis asperiores magnam perferendis cupiditate tempore ipsam non nostrum in expedita reprehenderit quibusdam.</p>
     
-    <iframe src="paginas-extras/pagina004.html" sandbox="sandbox" referrerpolicy="no-referrer" >
+    <iframe src="paginas-extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer" >
         Seu navegador não é compatível a isso...
     </iframe>
         
-    
+    <!-- Se quiser bloquear todas as ações que são potencialmente maliciosas dos sites que voce coloca dentro dom iframe, use-se a configuração chamada sandbox= sandbox, quando se coloca essa configuração ele bloqueia todo e qualquer acesso que  outros sites que estejam dentro do iframe tentem fazer como, por exemplo, o cadastro de pessoas.
+     *sandbox=sandbox  significa que todas as retrições foram aplicadas.
+     
+    Como deixar o site um pouco mais seguro é configurar o parametro  referrerpolicy (que é a politica de referencia), o padrão dessa referncia é o no-referer-when-downgrade, mas se voce quiser tornar seu site, carregado dentro do iframe, um pouco mais limitado coloque o valor no-referrer -->
+
+
 
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, praesentium inventore impedit, debitis fugit magni obcaecati in ad adipisci eos, id iusto earum enim. Iste modi dolore delectus accusamus est!</p>
 </body>
