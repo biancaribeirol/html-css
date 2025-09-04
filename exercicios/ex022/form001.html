@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!-- autocomplete=off para desligar a sugestao de preenchimento abaixo da caixa -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome</label>: 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+        <!-- a actoin ela é disparada quando clicar no botao de submit, cadastro.php é um script quee será feito para poder cadastrar os dados-->
+         <!-- diferença de name e id:
+           name mais util para HTML e php
+           id mais util para JavaScrit e inclusive para o uso do label  -->
+           <!-- method get é o padrão, mostra os dados na url, pode utilizar o get quando os dados não forem sensiveis, o POST oculta da url.
+            Quando voce envia dados por get, você pode enviar ate 3 mil bites, se ultrapassar de 3 mil bites o get não é o metodo para voce. 3 mil bites, só para ter uma ideia, é aproximadamente a 3 mil letras do dado inteiro do formulario e todos os nomes, não pode ultrapassar de 3 mil letras ppara usar o get, outra situação que não pode usar o get é se ppor acaso voce utilizar campos sensiveis (senhas, cartoes de creditos) e tambem, envio de fotos ou qualquer outro tipo de arquivo, e que seu formalurio faça esse envio ai nesses casos voce vai ultizar o post
+            quando utilizar o post: para dados sensiveiis, se os dados tiverem mais de 3 mil bites e por fim, se quiser fazer envio de arquivos-->
+    </form>
+</body>
+</html>
