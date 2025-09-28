@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*  Todas as demais medias */
+/* Typpical Device Breakpoints
+<576 → celulares pequenos
+
+576–768 → celulares grandes
+
+768–992 → tablets
+
+992–1200 → notebooks
+
+1200–1400 → desktops médios
+
+>1400 → telas grandes/4K
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        
+    }
+
+    main {
+        width: 768px;
+    }
+}
